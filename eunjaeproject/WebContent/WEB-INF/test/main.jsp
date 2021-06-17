@@ -36,7 +36,7 @@
 -->
 </style>
 <form name ="login" method="post" action="login_process.jsp"> 
-zxcvzxcvzxv
+
    <table width="100%" height="20"border="0" cellspacing="0" cellpadding="0">
     <tr bgcolor="#FFFFFF"> 
      <td width="45%">&nbsp;</td>
@@ -86,14 +86,14 @@ else{
 	</div>
 
          <ul id="nav">
-<!--     	<li><a href="searchfilter.jsp">맞춤검색필터</a></li> -->
-<!-- 		<li><a href="backpack.jsp">백팩</a></li> -->
-<!-- 		<li><a href="crossbag.jsp">크로스백</a></li> -->
-<!-- 		<li><a href="hipeco.jsp">힙색/에코백</a></li> -->
-<!-- 		<li><a href="clutchwallet.jsp">클러치/지갑</a></li> -->
-<!-- 		<li><a href="carrier.jsp">캐리어</a></li> -->
-<!-- 		<li><a href="photo_list.jsp">포토리뷰</a></li> -->
-<!-- 		<li><a href="qna_list.jsp">QnA</a></li> -->
+    	<li><a href="searchfilter.jsp">맞춤검색필터</a></li>
+		<li><a href="backpack.jsp">백팩</a></li>
+		<li><a href="crossbag.jsp">크로스백</a></li>
+		<li><a href="hipeco.jsp">힙색/에코백</a></li>
+		<li><a href="clutchwallet.jsp">클러치/지갑</a></li>
+		<li><a href="carrier.jsp">캐리어</a></li>
+		<li><a href="photo_list.jsp">포토리뷰</a></li>
+		<li><a href="qna_list.jsp">QnA</a></li>
 		</ul>
       </header>
 <img  class="main" src="images/main_banner.jpg">
