@@ -30,7 +30,7 @@
 	</natures>
 	<linkedResources>
 		<link>
-			<name>WebContent/JJSP</name>
+			<name>WebContent/WEB-INF/JJSP</name>
 			<type>2</type>
 			<location>C:/jsp/JJSP</location>
 		</link>

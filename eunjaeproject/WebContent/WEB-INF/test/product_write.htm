@@ -1,0 +1,159 @@
+<HTML>
+<HEAD>
+<SCRIPT language="javascript">
+
+function check(f) {
+ blank=false;
+ for (i=0; i<f.elements.length;i++) {
+  if (f.elements[i].value=="")
+   if (f.elements[i].name != "large") 
+    blank= true;
+ }
+ if (blank==true) 
+  alert("모든 항목을 입력하셔야 합니다.");
+ else
+  f.submit();
+}
+</SCRIPT> 
+</HEAD>
+<BODY>
+[<A href= "main.jsp"> 메인으로 </A>] 
+
+<FORM method=post action="product_save.jsp" enctype="multipart/form-data" >
+<TABLE border=0 width=300 align="center">
+ <TR>
+  <TH bgcolor=#fff0f5 colspan=2>
+   <FONT size=+1 color=black> 상품 올리기</FONT></TH>
+ </TR>
+ <TR>
+  <TH width=20% bgcolor=#fff0f5>
+   <FONT size=-1 color=black> 작성자</FONT></TH>
+  <TD bgcolor=#eeeeee> <INPUT type=text name=wname size=20>
+  </TD>
+ </TR>
+ <TR>
+  <TH width=20% bgcolor=#fff0f5>
+   <FONT size=-1 color=black>상품 분류</FONT></TH>
+  <TD bgcolor=#eeeeee>
+   <FONT size=-1  color=white>
+    <SELECT name=category1 size=1>
+     <OPTION value=1>백팩
+     <OPTION value=2>크로스백
+     <OPTION value=3>힙색/에코백
+     <OPTION value=4>클러치/지갑
+     <OPTION value=5>캐리어
+    </SELECT>
+    <SELECT name=category2 size=1>
+     <OPTION value=1>백팩(가죽)
+     <OPTION value=2>백팩(캐쥬얼)
+     <OPTION value=3>크로스백(가죽)
+     <OPTION value=4>크로스백(캐쥬얼)
+     <OPTION value=5>힙색
+     <OPTION value=6>에코백
+     <OPTION value=7>클러치
+     <OPTION value=8>지갑
+     <OPTION value=9>하드캐리어(21인치)
+     <OPTION value=10>하드캐리어(22인치~25인치)
+     <OPTION value=11>하드캐리어(26인치 이상)
+     <OPTION value=12>소프트캐리어(21인치)
+     <OPTION value=13>소프트캐리어(22인치~25인치)
+     <OPTION value=14>소프트캐리어(26인치 이상)
+    </SELECT>
+   </FONT>
+  </TD>
+ </TR>
+ 
+ </TR>
+ <TR>
+  <TH width=20% bgcolor=#fff0f5>
+   <FONT size=-1 color=black>상품명</FONT></TH>
+  <TD bgcolor=#eeeeee>
+   <INPUT type=text name=pname size=30>
+  </TD>
+ </TR>
+ <TR>
+  <TH width=20% bgcolor=#fff0f5>
+   <FONT size=-1 color=black>제조원</FONT></TH>
+  <TD bgcolor=#eeeeee>
+   <INPUT type=text name=sname size=30>
+  </TD>
+ </TR>
+ <TR>
+  <TH width=20% bgcolor=#fff0f5>
+   <FONT size=-1 color=black>시중가</FONT>
+  </TH>
+  <TD bgcolor=#eeeeee>
+   <INPUT type=text name=price size=10>
+  </TD>
+ </TR>
+ <TR>
+  <TH width=20% bgcolor=#fff0f5>
+   <FONT size=-1 color=black>판매가</FONT>
+  </TH>
+  <TD bgcolor=#eeeeee>
+   <INPUT type=text name=dprice size=10>
+  </TD>
+ </TR>
+ <TR>
+ <TH width=20% bgcolor=#fff0f5>
+   <FONT size=-1 color=black>상품 색깔</FONT></TH>
+  <TD bgcolor=#eeeeee>
+   <FONT size=-1  color=white>
+    <SELECT name=color size=1>
+     <OPTION value=1>검정
+     <OPTION value=2>흰색
+     <OPTION value=3>네이비
+     <OPTION value=4>아이보리
+     <OPTION value=5>회색
+     <OPTION value=6>파랑
+    </SELECT>
+    </FONT>
+    </TD>
+ </TR>
+ <TR>
+  <TH width=20% bgcolor=#fff0f5>
+   <FONT size=-1 color=black>입고 수량</FONT>
+  </TH>
+  <TD bgcolor=#eeeeee>
+   <INPUT type=text name=stock size=10>
+  </TD>
+ </TR>
+ <TR>
+  <TH width=20% bgcolor=#fff0f5>
+   <FONT size=-1 color=black>작은 이미지</FONT>
+  </TH>
+  <TD bgcolor=#eeeeee>
+   <INPUT type=file name=small size=30>
+  </TD>
+ </TR>
+ <TR>
+  <TH width=20% bgcolor=#fff0f5>
+   <FONT size=-1 color=black>큰 이미지</FONT>
+  </TH>
+  <TD bgcolor=#eeeeee>
+   <INPUT type=file name=large size=30>
+  </TD>
+ </TR>
+ <TR>
+  <TH bgcolor=#fff0f5>
+   <FONT size=-1 color=black> 상품 내용</FONT>
+  </TH>
+  <TD bgcolor=#eeeeee>
+  </TD>
+ </TR>
+ <TR>
+  <TD colspan=2>
+   <TEXTAREA name=description cols=70 rows=5></TEXTAREA>
+  </TD>
+ </TR>
+ <TR>
+  <TD colspan=2 align="right">
+   <INPUT type=button value=" 저장 " onClick="check(this.form)" >
+   <INPUT type=reset value=" 다시쓰기 " >
+  </TD>
+ </TR>
+</TABLE>
+</CENTER>
+</FORM>
+</BODY>
+</HTML>
