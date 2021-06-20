@@ -9,7 +9,7 @@
 %>
 <link rel="StyleSheet" href="style.css" type="text/css">
 <script language="JavaScript">
-
+수정했찌롱~~~
  function login_check() {
   if (!document.login.userid.value) {
    alert("ID를 입력하세요!");
